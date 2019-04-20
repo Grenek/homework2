@@ -50,7 +50,7 @@ buttonBuild.addEventListener("click", async function() {
       datasets: [
         {
           label: "Стоимость валюты в рублях",
-          backgroundColor: "rgb(255, 20, 20)",
+          backgroundColor: "rgb(255, 200, 20)",
           borderColor: "rgb(180, 0, 0)",
           data: plotData
         }
