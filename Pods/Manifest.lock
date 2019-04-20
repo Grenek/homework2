@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (4.8.2)
+  - Charts (3.2.2):
+    - Charts/Core (= 3.2.2)
+  - Charts/Core (3.2.2)
+  - SwiftChart (1.0.1)
+  - SWXMLHash (4.9.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Charts
+  - SwiftChart
+  - SWXMLHash
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Charts
+    - SwiftChart
+    - SWXMLHash
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Charts: f69cf0518b6d1d62608ca504248f1bbe0b6ae77e
+  SwiftChart: ba767a678d568a5ee22d419e146a0582865e1aff
+  SWXMLHash: 87b0006848a548b7f9485b40bc71721b3ae39add
+
+PODFILE CHECKSUM: d6f6bf3794e116fd42acc3237b63c72000087cfb
+
+COCOAPODS: 1.6.1
