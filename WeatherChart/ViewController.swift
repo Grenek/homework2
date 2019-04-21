@@ -91,22 +91,25 @@ class ViewController: UIViewController, XMLParserDelegate, ChartDelegate {
             print(self.avTempsFeels)
             print(self.avTemps)
             print(self.hours)
+            print(self.hoursDouble)
         }
         task.resume()
     }
     
     func setChart() {
-        let data0 = [(x: hour0, y: avTemp0),
+        let data0 = [(x: hour2, y: avTemp2),
+                     (x: hour3, y: avTemp3),
+                     (x: hour0, y: avTemp0),
                      (x: hour1, y: avTemp1),
-                     (x: hour2, y: avTemp2),
-                     (x: hour3, y: avTemp3),]
-        let data1 = [(x: hour0, y: avTempFeels0),
+                     
+                     ]
+        let data1 = [(x: hour2, y: avTempFeels2),
+                     (x: hour3, y: avTempFeels3),
+                     (x: hour0, y: avTempFeels0),
                      (x: hour1, y: avTempFeels1),
-                     (x: hour2, y: avTempFeels2),
-                     (x: hour3, y: avTempFeels3),]
+        ]
         
         chart.yLabels = ([avTemps.max()] + [avTempsFeels.min()] + [0.0] as! [Double])
-        chart.xLabels = hoursDouble
         chart.minY = avTempsFeels.min()! - 1
         chart.maxY = avTemps.max()! + 1
         chart.yLabelsFormatter = { String(Int(round($1))) + "°С" }
